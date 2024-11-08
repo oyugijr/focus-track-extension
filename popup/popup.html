@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="focus-track">
+    <h2>Focus Track</h2>
+
+    <!-- Pomodoro Controls -->
+    <label>Work Duration (minutes):</label>
+    <input type="number" id="workDuration" value="25" min="1">
+    <label>Break Duration (minutes):</label>
+    <input type="number" id="breakDuration" value="5" min="1">
+
+    <button id="startPomodoro">Start Pomodoro</button>
+    <button id="stopPomodoro">Stop Pomodoro</button>
+    <p id="status"></p>
+
+    <!-- Task List -->
+    <div class="task-list">
+      <h3>Tasks</h3>
+      <input type="text" id="newTask" placeholder="New task">
+      <button id="addTask">Add Task</button>
+      <ul id="taskList"></ul>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* Popup styling */
+body {
+    font-family: Arial, sans-serif;
+    width: 200px;
+    padding: 10px;
+  }
+  
+  .focus-track {
+    text-align: center;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  /* Task list styling */
+  .task-list {
+    margin-top: 15px;
+  }
+  .task-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-list li.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
