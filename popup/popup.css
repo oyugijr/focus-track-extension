@@ -1,35 +1,44 @@
-/* Popup styling */
 body {
-    font-family: Arial, sans-serif;
-    width: 200px;
-    padding: 10px;
-  }
-  
-  .focus-track {
-    text-align: center;
-  }
-  
-  button {
-    margin-top: 10px;
-  }
-  
-  /* Task list styling */
-  .task-list {
-    margin-top: 15px;
-  }
-  .task-list ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .task-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .task-list li.completed {
-    text-decoration: line-through;
-    color: gray;
-  }
-  
+  font-family: Arial, sans-serif;
+  width: 220px;
+  padding: 10px;
+}
+
+.focus-track {
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+}
+
+/* Task list styling */
+.task-list {
+  margin-top: 15px;
+}
+.task-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Ambient Sound Controls */
+.sound-controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sound-controls button {
+  display: block;
+  margin: 5px auto;
+}

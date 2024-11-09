@@ -1,25 +1,32 @@
 {
-    "manifest_version": 3,
-    "name": "Focus Track",
-    "version": "2.0",
-    "description": "A Chrome extension for focus sessions with Pomodoro, task management, and ambient sounds.",
-    "permissions": ["storage", "alarms", "notifications"],
-    "action": {
-      "default_popup": "popup/popup.html",
-      "default_icon": {
-        "16": "icons/icon16.png",
-        "48": "icons/icon48.png",
-        "128": "icons/icon128.png"
-      }
-    },
-    "background": {
-      "service_worker": "background.js"
-    },
-    "icons": {
+  "manifest_version": 3,
+  "name": "Focus Track",
+  "version": "1.0",
+  "description": "A Chrome extension to help you stay focused with Pomodoro timers, task management, and ambient sounds.",
+  "permissions": ["storage", "alarms", "notifications"],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
-    },
-    "options_page": "options.html"
-  }
-  
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "sounds/white-noise.mp3",
+        "sounds/rain.mp3"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
