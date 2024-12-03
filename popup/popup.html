@@ -2,37 +2,52 @@
 <html>
 <head>
   <link rel="stylesheet" href="popup.css">
+  <script src="analytics.js"></script>
 </head>
 <body>
   <div class="focus-track">
-    <h2>Focus Track</h2>
+    <h2 data-i18n="extensionName"></h2>
 
     <!-- Pomodoro Controls -->
-    <label>Work Duration (minutes):</label>
+    <label data-i18n="workDurationLabel">Work Duration (minutes):</label>
     <input type="number" id="workDuration" value="25" min="1">
-    <label>Break Duration (minutes):</label>
+    <label data-i18n="breakDurationLabel">Break Duration (minutes):</label>
     <input type="number" id="breakDuration" value="5" min="1">
 
-    <button id="startPomodoro">Start Pomodoro</button>
-    <button id="stopPomodoro">Stop Pomodoro</button>
+    <button id="startPomodoro" data-i18n="startTimer">Start Pomodoro</button>
+    <button id="stopPomodoro" data-i18n="stopTimer">Stop Pomodoro</button>
     <p id="status"></p>
 
     <!-- Task List -->
     <div class="task-list">
-      <h3>Tasks</h3>
+      <h3 data-i18n="tasks">Tasks</h3>
       <input type="text" id="newTask" placeholder="New task">
-      <button id="addTask">Add Task</button>
+      <input type="text" id="taskCategory" placeholder="Category">
+      <input type="text" id="taskPriority" placeholder="Priority">
+      <input type="date" id="taskDeadline" placeholder="Deadline">
+      <button id="addTask" data-i18n="addTask">Add Task</button>
       <ul id="taskList"></ul>
     </div>
 
     <!-- Ambient Sound Controls -->
     <div class="sound-controls">
-      <h3>Ambient Sounds</h3>
-      <button id="playWhiteNoise">Play White Noise</button>
-      <button id="playRain">Play Rain</button>
-      <button id="stopSound">Stop Sound</button>
+      <h3 data-i18n="ambientSounds">Ambient Sounds</h3>
+      <button id="playWhiteNoise" data-i18n="playWhiteNoise">Play White Noise</button>
+      <button id="playRain" data-i18n="playRain">Play Rain</button>
+      <button id="stopSound" data-i18n="stopSound">Stop Sound</button>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+      <label for="darkModeToggle" data-i18n="darkMode">Dark Mode:</label>
+      <input type="checkbox" id="darkModeToggle">
     </div>
   </div>
   <script type="module" src="popup.js"></script>
+  <script>
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      el.innerText = chrome.i18n.getMessage(el.getAttribute('data-i18n'));
+    });
+  </script>
 </body>
 </html>

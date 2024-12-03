@@ -1,0 +1,29 @@
+{
+  "extensionName": {
+    "message": "Focus Track"
+  },
+  "extensionDescription": {
+    "message": "A Chrome extension to help you stay focused with Pomodoro timers, task management, and ambient sounds."
+  },
+  "startTimer": {
+    "message": "Start Timer"
+  },
+  "stopTimer": {
+    "message": "Stop Timer"
+  },
+  "addTask": {
+    "message": "Add Task"
+  },
+  "pomodoroComplete": {
+    "message": "Pomodoro Complete"
+  },
+  "takeBreak": {
+    "message": "Take a $breakDuration$ minute break!"
+  },
+  "breakOver": {
+    "message": "Break Over"
+  },
+  "timeToFocus": {
+    "message": "Time to focus again!"
+  }
+}

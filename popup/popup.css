@@ -42,3 +42,9 @@ button {
   display: block;
   margin: 5px auto;
 }
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}

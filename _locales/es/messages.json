@@ -1,0 +1,29 @@
+{
+  "extensionName": {
+    "message": "Rastreador de Enfoque"
+  },
+  "extensionDescription": {
+    "message": "Una extensión de Chrome para ayudarte a mantenerte enfocado con temporizadores Pomodoro, gestión de tareas y sonidos ambientales."
+  },
+  "startTimer": {
+    "message": "Iniciar Temporizador"
+  },
+  "stopTimer": {
+    "message": "Detener Temporizador"
+  },
+  "addTask": {
+    "message": "Agregar Tarea"
+  },
+  "pomodoroComplete": {
+    "message": "Pomodoro Completo"
+  },
+  "takeBreak": {
+    "message": "¡Toma un descanso de $breakDuration$ minutos!"
+  },
+  "breakOver": {
+    "message": "Descanso Terminado"
+  },
+  "timeToFocus": {
+    "message": "¡Es hora de enfocarse de nuevo!"
+  }
+}

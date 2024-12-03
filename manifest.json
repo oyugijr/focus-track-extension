@@ -1,9 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Focus Track",
+  "name": "__MSG_extensionName__",
   "version": "1.0",
-  "description": "A Chrome extension to help you stay focused with Pomodoro timers, task management, and ambient sounds.",
-  "permissions": ["storage", "alarms", "notifications"],
+  "description": "__MSG_extensionDescription__",
+  "default_locale": "en",
+  "permissions": ["storage", "alarms", "notifications", "contextMenus"],
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": {
@@ -20,6 +21,7 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
+  "options_page": "options/options.html",
   "web_accessible_resources": [
     {
       "resources": [
